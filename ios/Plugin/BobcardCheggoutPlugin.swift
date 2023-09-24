@@ -15,4 +15,11 @@ public class BobcardCheggoutPlugin: CAPPlugin {
             "value": implementation.echo(value)
         ])
     }
+
+    @objc func launchSDK(_ call: CAPPluginCall) {
+        let value = call.getString("value") ?? ""
+        call.resolve([
+            "value": implementation.echo(value)
+        ])
+    }
 }

@@ -10,4 +10,9 @@ export class BobcardCheggoutWeb
     console.log('ECHO', options);
     return options;
   }
+
+  async launchSDK(options: { virtualId: string, sessionId: string, payload: string }): Promise<{ message: string }> {
+    console.log('launchSDK', options);
+    return { message: 'success' };
+  }
 }
